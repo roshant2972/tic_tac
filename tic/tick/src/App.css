@@ -1,0 +1,120 @@
+/* Fullscreen background with blur effect */
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, rgba(15, 32, 39, 0.8), rgba(32, 58, 67, 0.8), rgba(44, 83, 100, 0.8)),
+              url("./assets/images/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glassmorphism effect */
+.glass-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  width: 400px;
+  z-index: 10;
+}
+
+/* Neon Glow Title */
+.game-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+}
+
+/* Player turn indicator */
+.turn-indicator {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.your-turn {
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+.opponent-turn {
+  color: #ff3333;
+  text-shadow: 0 0 10px #ff3333;
+}
+
+/* Win Tracker */
+.win-tracker {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 15px 0;
+}
+
+.x-wins {
+  color: #ff00ff;
+  font-weight: bold;
+}
+
+.o-wins {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+/* Tic-Tac-Toe Board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+/* Highlight active player's move */
+.cell {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Green highlight for X, Blue for O */
+.cell.filled-x {
+  background: rgba(0, 255, 0, 0.3);
+  border-color: #00ff00;
+}
+
+.cell.filled-o {
+  background: rgba(0, 162, 255, 0.3);
+  border-color: #00a2ff;
+}
+
+/* Hover effect on empty cells */
+.cell.empty:hover {
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
