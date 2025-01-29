@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-const SERVER_URL = "ws://localhost:3001";
+const SERVER_URL = "wss://https://tic-tac-navy.vercel.app/";
 
 function App() {
   const [roomId, setRoomId] = useState(null);
