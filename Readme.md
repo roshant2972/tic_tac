@@ -33,7 +33,8 @@ Players can create or join rooms and play synchronised matches without refreshin
 
 ## Demo
 
-_Add screenshots or a GIF here (example: `./assets/screenshot.png`)._
+** Mobile View** [Mobile view ](tic/tick/public/mobileView.png)
+**Desktop View** [Desktop view](tic/tick/public/desktopView.png)
 
 ---
 
@@ -107,3 +108,4 @@ _Add screenshots or a GIF here (example: `./assets/screenshot.png`)._
 ```bash
 git clone https://github.com/your-username/multiplayer-tic-tac-toe.git
 cd multiplayer-tic-tac-toe
+
